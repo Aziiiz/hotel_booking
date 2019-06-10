@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Magestic Hotel</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <script src="/javascripts/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="/stylesheets/normalize.css" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+
+
+
+    </head>
+
+    <div id="wrapper">
+      <div id="header">
+        <div class="header">
+          <div id="logo"></div>
+          <ul class="top-menu">
+            <li><a href="/auth/login">Login</a></li>
+            <li><a href="#">Search Bookings</a></li>
+            <li><a href="#" class="button">Account</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Restaurants</a></li>
+            <li><a href="/forms">Form</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Deals</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="search">
+        <div class="search-inner">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Hotels</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Flights</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Trains</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="input-container">
+                <div class="input-block">
+                  <label>Destination or hotel name:</label>
+                  <input type="text" placeholder="City, airport, region, landmark or hotel name"/>
+                </div>
+              </div>
+              <button class="search-btn">Search</button>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="input-container">
+                <div class="input-block-half">
+                  <label>From:</label>
+                  <input type="text" placeholder="City or airport"/>
+                </div>
+                <div class="input-block-half">
+                  <label>To:</label>
+                  <input type="text" placeholder="City or airport"/>
+                </div>
+              </div>
+              <button class="search-btn">Search</button>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="input-container">
+                <div class="input-block-half">
+                  <label>From:</label>
+                  <input type="text" placeholder="City or airport"/>
+                </div>
+                <div class="input-block-half">
+                  <label>To:</label>
+                  <input type="text" placeholder="City or airport"/>
+                </div>
+              </div>
+              <button class="search-btn">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="container-fluid company-info">
+          <div class="row">
+            <div class="col info-1">
+              <div class="info-content">
+                <h5>Competitive Pricing</h5>
+                <p>With 500+ suppliers and the purchasing power of 300 million members, Trip.com can save you more!</p>
+              </div>
+            </div>
+            <div class="col info-2">
+              <div class="info-content">
+                <h5>Award-Winning Service</h5>
+                <p>Travel worry-free knowing that we're here if you need us, 24 hours a day</p>
+              </div>
+            </div>
+            <div class="col info-3">
+              <div class="info-content">
+                <h5>Worldwide Coverage</h5>
+                <p>Over 1,200,000 hotels in more than 200 countries and regions & flights to over 5,000 cities</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recommends">
+          <h3>Recommended Hotels</h3>
+          <ul>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Los Angeles</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Hong Kong</a></li>
+            <li><a href="#">Shanghai</a></li>
+            <li><a href="#">Bangkok</a></li>
+            <li><a href="#">Seoul</a></li>
+            <li><a href="#">Tokyo</a></li>
+            <li><a href="#">Singapore</a></li>
+          </ul>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/1.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Lyric Hotel</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                      From <span class="Price">$499</span>
+                      <button class="btn btn-sm btn-outline-primary">More info...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/1.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Lyric Hotel</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                      From <span class="Price">$499</span>
+                      <button class="btn btn-sm btn-outline-primary">More info...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/1.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Lyric Hotel</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                      From <span class="Price">$499</span>
+                      <button class="btn btn-sm btn-outline-primary">More info...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/1.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Lyric Hotel</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                      From <span class="Price">$499</span>
+                      <button class="btn btn-sm btn-outline-primary">More info...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recommends">
+          <h3>Top Round-trip Flight Deals</h3>
+          <ul>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Los Angeles</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Hong Kong</a></li>
+            <li><a href="#">Shanghai</a></li>
+            <li><a href="#">Bangkok</a></li>
+            <li><a href="#">Seoul</a></li>
+            <li><a href="#">Tokyo</a></li>
+            <li><a href="#">Singapore</a></li>
+          </ul>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <span class="small">From: Hong Kong</span>
+                    <h5 class="card-title">Bangkok</h5>
+                    <p class="card-text">
+                      <span class="small">Sun, May 19  &mdash; Wed, May 22</span><br>
+                      From <span class="Price">$200</span>
+                      <button class="btn btn-sm btn-outline-primary">See...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <span class="small">From: Hong Kong</span>
+                    <h5 class="card-title">Bangkok</h5>
+                    <p class="card-text">
+                      <span class="small">Sun, May 19  &mdash; Wed, May 22</span><br>
+                      From <span class="Price">$200</span>
+                      <button class="btn btn-sm btn-outline-primary">See...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <span class="small">From: Hong Kong</span>
+                    <h5 class="card-title">Bangkok</h5>
+                    <p class="card-text">
+                      <span class="small">Sun, May 19  &mdash; Wed, May 22</span><br>
+                      From <span class="Price">$200</span>
+                      <button class="btn btn-sm btn-outline-primary">See...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <span class="small">From: Hong Kong</span>
+                    <h5 class="card-title">Bangkok</h5>
+                    <p class="card-text">
+                      <span class="small">Sun, May 19  &mdash; Wed, May 22</span><br>
+                      From <span class="Price">$200</span>
+                      <button class="btn btn-sm btn-outline-primary">See...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <div class="card-body">
+                    <span class="small">From: Hong Kong</span>
+                    <h5 class="card-title">Bangkok</h5>
+                    <p class="card-text">
+                      <span class="small">Sun, May 19  &mdash; Wed, May 22</span><br>
+                      From <span class="Price">$200</span>
+                      <button class="btn btn-sm btn-outline-primary">See...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recommends">
+          <h3>Popular attractions</h3>
+          <ul>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Los Angeles</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Hong Kong</a></li>
+            <li><a href="#">Shanghai</a></li>
+            <li><a href="#">Bangkok</a></li>
+            <li><a href="#">Seoul</a></li>
+            <li><a href="#">Tokyo</a></li>
+            <li><a href="#">Singapore</a></li>
+          </ul>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/1.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Chihuly Garden and Glass</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/1.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Chihuly Garden and Glass</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/1.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Chihuly Garden and Glass</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/1.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Chihuly Garden and Glass</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="recommends">
+          <h3>Recommend Car Rentals</h3>
+          <ul>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Los Angeles</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">Hong Kong</a></li>
+            <li><a href="#">Shanghai</a></li>
+            <li><a href="#">Bangkok</a></li>
+            <li><a href="#">Seoul</a></li>
+            <li><a href="#">Tokyo</a></li>
+            <li><a href="#">Singapore</a></li>
+          </ul>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/2.png" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Chevrolet Spark or Similar</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                      From <span class="Price">$49</span>
+                      <button class="btn btn-sm btn-outline-primary">More info...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/2.png" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Chevrolet Spark or Similar</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                      From <span class="Price">$49</span>
+                      <button class="btn btn-sm btn-outline-primary">More info...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/2.png" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Chevrolet Spark or Similar</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                      From <span class="Price">$49</span>
+                      <button class="btn btn-sm btn-outline-primary">More info...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3">
+                  <img src="/images/2.png" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Chevrolet Spark or Similar</h5>
+                    <p class="card-text">
+                      <span class="rating">4.6/5</span>(111 views)<br>
+                      From <span class="Price">$49</span>
+                      <button class="btn btn-sm btn-outline-primary">More info...</button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="global-info">
+          <p><b>Save on Travel with Trip.com</b>
+          <p>As one of the world's leading online travel agencies, Trip.com is here to help you plan the perfect trip. Whether you're going on holiday, taking a business trip, or looking to set up a corporate travel account, Trip.com is here to help you travel the world with cheap flights, discount hotels, and Chinese train tickets. Looking to find great travel deals or enjoy the biggest savings on your next trip? Trip.com has you covered. With our easy-to-use website and app, along with 24-hour customer service, booking your next trip couldn't be simpler. With Trip.com, quality travel services in over a dozen languages including English, Mandarin, Cantonese, Japanese, Korean, German, French, and Spanish are just a call—or click—away.
+          <p><b>Easily Customize Your Trip with the Best Hotel and Flight Deals</b>
+          <p>It's easy to customize your travel experience with our robust flight and hotel search filter options and Trip.com travel tools like flight fare alerts, deal-finder calendar, and early bird deals. Trip.com''s secure payment system takes the stress out of travel by providing easy payment options, including credit and debit cards, and UnionPay.
+        </div>
+      </div>
+      <div id="footer">
+        <p>Copyright © 1999-2019 Ctrip.com (Hong Kong) Limited. All rights reserved.
+        <p>Site Operator: Ctrip.com (Hong Kong) Limited
+        <p>Hong Kong Travel License No. 352367
+      </div>
+    </div>
+</body>
+</html>
